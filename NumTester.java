@@ -12,6 +12,7 @@ public class NumTester {
     System.out.println(d.equals(a)) ;
     System.out.println(d.equals(e)) ;
     System.out.println(d.equals(d)) ;
+    System.out.println(a.add(b)) ;
   }
 
 }

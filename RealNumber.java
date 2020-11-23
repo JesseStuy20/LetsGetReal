@@ -13,7 +13,7 @@ public class RealNumber {
     return getValue() + "" ;
   }
 
-  public boolean equals(RealNumber other){
+  public boolean equals(RealNumber other) {
     boolean result = false ;
     if ((getValue() == 0.0) && (other.getValue() == 0.0)) {
       result = true ;
@@ -24,6 +24,11 @@ public class RealNumber {
       }
     }
     return result ;
+  }
+
+  public RealNumber add(RealNumber other) {
+    value = (value + other.getValue()) ;
+    return this ;
   }
 
 }
