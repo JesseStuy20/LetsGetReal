@@ -64,4 +64,11 @@ public class RationalNumber extends RealNumber {
     denominator = denominator / gcd ;
   }
 
+  public RationalNumber multiply(RationalNumber other){
+    RationalNumber result = new RationalNumber((this.numerator * other.numerator),
+    (this.denominator * other.denominator)) ;
+    result.reduce() ;
+    return result ;
+  }
+
 }
