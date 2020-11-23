@@ -15,6 +15,7 @@ public class NumTester {
     System.out.println(a.add(b)) ;
     System.out.println(a.multiply(b)) ;
     System.out.println(a.divide(b)) ;
+    System.out.println(a.subtract(b)) ;
   }
 
 }
