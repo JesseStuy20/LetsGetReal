@@ -89,4 +89,15 @@ public class RationalNumber extends RealNumber {
     return result ;
   }
 
+  public RationalNumber subtract(RationalNumber other) {
+    int lcm = ((this.denominator * other.denominator)
+    / gcd(this.denominator,other.denominator)) ;
+    int nume = ((lcm/this.denominator*this.numerator)
+    - (lcm/other.denominator*other.numerator)) ;
+    int deno = lcm ;
+    RationalNumber result = new RationalNumber(nume,deno) ;
+    result.reduce() ;
+    return result ;
+  }
+
 }
