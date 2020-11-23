@@ -19,4 +19,12 @@ public class RationalNumber extends RealNumber {
     return super.getValue() ;
   }
 
+  public int getNumerator() {
+    return numerator ;
+  }
+
+  public int getDenominator() {
+    return denominator ;
+  }
+
 }

@@ -18,6 +18,8 @@ public class NumTester {
     System.out.println(a.subtract(b)) ;
     RationalNumber f = new RationalNumber(2,5) ;
     System.out.println(f.toString()) ;
+    System.out.println(f.getNumerator()) ;
+    System.out.println(f.getDenominator()) ;
   }
 
 }
