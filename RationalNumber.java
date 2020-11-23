@@ -13,6 +13,7 @@ public class RationalNumber extends RealNumber {
       numerator = (nume * -1) ;
       denominator = (deno * -1) ;
     }
+    reduce() ;
   }
 
   public double getValue() {
@@ -39,6 +40,28 @@ public class RationalNumber extends RealNumber {
 
   public String toString(){
     return getNumerator() + "/" + getDenominator() ;
+  }
+
+  private static int gcd(int a, int b) {
+    if (a < b) {
+      int temp = a ;
+      a = b ;
+      b = temp ;
+    }
+    int result = a % b ;
+    for (int i=b; b>0; b=result) {
+      result = a % b ;
+      a = b ;
+      b = result ;
+
+    }
+    return a ;
+  }
+
+  private void reduce() {
+    int gcd = gcd(numerator,denominator) ;
+    numerator = numerator / gcd ;
+    denominator = denominator / gcd ;
   }
 
 }
