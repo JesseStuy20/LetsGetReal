@@ -16,6 +16,8 @@ public class NumTester {
     System.out.println(a.multiply(b)) ;
     System.out.println(a.divide(b)) ;
     System.out.println(a.subtract(b)) ;
+    RationalNumber f = new RationalNumber(2,5) ;
+    System.out.println(f.toString()) ;
   }
 
 }
