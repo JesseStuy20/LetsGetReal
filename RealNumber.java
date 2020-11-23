@@ -27,8 +27,13 @@ public class RealNumber {
   }
 
   public RealNumber add(RealNumber other) {
-    value = (value + other.getValue()) ;
-    return this ;
+    RealNumber result = new RealNumber(this.getValue() + other.getValue()) ;
+    return result ;
+  }
+
+  public RealNumber multiply(RealNumber other) {
+    RealNumber result = new RealNumber(this.getValue() * other.getValue()) ;
+    return result ;
   }
 
 }
