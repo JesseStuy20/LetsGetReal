@@ -28,6 +28,7 @@ public class NumTester {
     System.out.println(h.toString()) ;
     System.out.println(f.multiply(g)) ;
     System.out.println(f.divide(g)) ;
+    System.out.println(f.add(g)) ;
   }
 
 }
