@@ -21,6 +21,9 @@ public class NumTester {
     System.out.println(f.getNumerator()) ;
     System.out.println(f.getDenominator()) ;
     System.out.println(f.reciprocal()) ;
+    RationalNumber g = new RationalNumber(2,9) ;
+    System.out.println(f.equals(g)) ;
+    System.out.println(f.equals(f)) ;
   }
 
 }
