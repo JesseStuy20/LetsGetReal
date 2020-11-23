@@ -27,6 +27,7 @@ public class NumTester {
     RationalNumber h = new RationalNumber(6,18) ;
     System.out.println(h.toString()) ;
     System.out.println(f.multiply(g)) ;
+    System.out.println(f.divide(g)) ;
   }
 
 }

@@ -70,5 +70,11 @@ public class RationalNumber extends RealNumber {
     result.reduce() ;
     return result ;
   }
+  public RationalNumber divide(RationalNumber other){
+    RationalNumber result = new RationalNumber((this.numerator * other.denominator),
+    (this.denominator * other.numerator)) ;
+    result.reduce() ;
+    return result ;
+  }
 
 }
