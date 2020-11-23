@@ -20,6 +20,7 @@ public class NumTester {
     System.out.println(f.toString()) ;
     System.out.println(f.getNumerator()) ;
     System.out.println(f.getDenominator()) ;
+    System.out.println(f.reciprocal()) ;
   }
 
 }
