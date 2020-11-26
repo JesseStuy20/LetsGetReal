@@ -30,6 +30,10 @@ public class NumTester {
     System.out.println(f.divide(g)) ;
     System.out.println(f.add(g)) ;
     System.out.println(f.subtract(g)) ;
+    RationalNumber i = new RationalNumber(14,1) ;
+    System.out.println(i.toString()) ;
+    RationalNumber j = new RationalNumber(0,5) ;
+    System.out.println(j.toString()) ;
   }
 
 }

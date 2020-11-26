@@ -38,7 +38,9 @@ public class RationalNumber extends Number {
   }
 
   public String toString(){
-    return getNumerator() + "/" + getDenominator() ;
+    String result = getNumerator() + "/" + getDenominator() ;
+    if ((getNumerator() == 0) || (getDenominator() == 1)) result = getNumerator() + "" ;
+    return result ;
   }
 
   private static int gcd(int a, int b) {
@@ -58,9 +60,12 @@ public class RationalNumber extends Number {
   }
 
   private void reduce() {
-    int gcd = gcd(numerator,denominator) ;
-    numerator = numerator / gcd ;
-    denominator = denominator / gcd ;
+    if (numerator != 0 ) {
+      int gcd = gcd(numerator,denominator) ;
+      numerator = numerator / gcd ;
+      denominator = denominator / gcd ;
+    }
+    if (numerator == 0 ) denominator = 1 ;
   }
 
   public RationalNumber multiply(RationalNumber other) {
