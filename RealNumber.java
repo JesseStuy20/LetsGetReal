@@ -13,6 +13,10 @@ public class RealNumber extends Number {
     return getValue() + "" ;
   }
 
+  public boolean equals(RealNumber other) {
+    return super.equals(other) ;
+  }
+
   public RealNumber add(RealNumber other) {
     RealNumber result = new RealNumber(this.getValue() + other.getValue()) ;
     return result ;
